@@ -1,0 +1,146 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #E6A8F7, #A45CC4);
+    height: 200vh;
+}
+
+/* HEADER */
+header {
+  background-color: #E08BF1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav a {
+  margin: 0 45px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.icons img {
+  width: 45px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* Sección principal (Hero) */
+.hero {
+    text-align: center;
+    color: white;
+    padding: 30px 20px 50px;
+    min-height: 80vh;
+    position: relative;
+}
+
+/* Imagen de fondo (Conejito flotante) */
+.hero::before {
+    content: "";
+    background: url('img/conejito.png') no-repeat center;
+    background-size: contain;
+    width: 650px; /* Tamaño del conejito */
+    height: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: float 3s infinite ease-in-out; /* Animación flotante */
+}
+
+/* Animación de flotación */
+@keyframes float {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+}
+
+/* Caja del producto destacado */
+.product-box {
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 200px; /* Espaciado para no chocar con el conejito */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.product-box .tag {
+    background: #A45CC4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.product-box h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-box .price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-box .buy-btn, .product-box .arrow-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.product-box .buy-btn {
+    background: #A45CC4;
+    color: white;
+}
+
+.product-box .arrow-btn {
+    background: #E6A8F7;
+    color: white;
+}
+
+/* Cuadros redondeados para colecciones */
+.collection-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.collection-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Colores de las colecciones */
+.collection-1 {
+    background: #FBC3E0; /* Color rosa */
+}
+
+.collection-2 {
+    background: #6DC7E8; /* Color azul celeste */
+}

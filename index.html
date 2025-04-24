@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colecciones</title>
+  <!-- Vinculamos el archivo CSS externo -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<!-- HEADER de navegación -->
+<header>
+  <!-- Logo que lleva a index.html -->
+  <a href="index.html"><img src="img/logoConejo.png" alt="Logo" class="logo" /></a>
+  <nav>
+    <!-- Enlaces de navegación -->
+    <a href="index.html">Historia</a>
+    <a href="colecciones.html">Colecciones</a>
+  </nav>
+  <!-- Íconos de usuario y tienda -->
+  <div class="icons">
+
+    <a href="compra.html"><img src="img/iconos/bolsa.png" alt="Bolsa de compra" /></a>
+  </div>
+</header>
+
+<!-- Sección principal (Hero) -->
+<section class="hero">
+  <h1>Loving YOU is in my DNA</h1>
+
+  <!-- Caja del producto destacado -->
+  <div class="product-box">
+    <p class="tag">Hot product</p>
+    <h2>Conejito Amoroso</h2>
+    <p class="price">$12.99</p>
+    <a href="compra.html" class="buy-btn">Comprar ahora</a>
+    <a href="compra.html" class="arrow-btn">➡</a> <!-- Botón hacia Hot Product -->
+  </div>
+
+  <!-- Botones de colección con imágenes -->
+  <div class="collection-buttons">
+    <a href="colecciones.html" class="collection-btn"><img src="img/conejo3.png" alt="Colección 1"></a>
+    <a href="colecciones.html" class="collection-btn"><img src="img/conejo4.png" alt="Colección 2"></a>
+  </div>
+</section>
+
+<!-- NUEVA SECCIÓN: LOREM IPSUM Collection -->
+<section class="lorem-collection">
+  <div class="lorem-box">
+    <div class="lorem-text">
+      <h2>LOREM IPSUM <br> Collection</h2>
+      <a href="compra.html" class="shop-btn">
+        Comprar ahora
+        <img src="img/iconos/bolsa.png" alt="Shop Icon" class="shop-icon" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- NUEVA SECCIÓN: Our History con video -->
+<section class="history-section">
+  <h2>Conocenos</h2>
+  <p class="history-description">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+  <div class="video-container">
+    <iframe src="img/tiendaweb_1.mp4" title="Historia Video" frameborder="0"
+            allowfullscreen></iframe>
+  </div>
+  <p class="history-description">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent libero. Sed cursus ante dapibus diam.
+  </p>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <div class="subscribe">
+      <h3>SUSCRÍBETE POR MAIL</h3>
+      <input type="email" placeholder="Enter e-mail" />
+      <button onclick="subscribe()">➜</button>
+    </div>
+    <div class="social-media">
+      <h3>SÍGUENOS EN REDES SOCIALES</h3>
+      <a href="#" target="_blank">INSTAGRAM ➜</a>
+      <a href="#" target="_blank">FACEBOOK ➜</a>
+      <a href="#" target="_blank">TIKTOK ➜</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <!-- Logo -->
+          <div class="four columns">
+            <a href="index.html"><img src="img/logoConejo.png" alt="Logo" class="logo" width = "75" /></a>
+          </div>
+
+          <!-- Enlaces: Historia, Contacto, Colecciones -->
+          <div class="four columns">
+            <ul class="menu">
+              <li><a href="index.html">Historia</a></li>
+              <li><a href="colecciones.html">Colecciones</a></li>
+            </ul>
+          </div>
+
+          <!-- Carrito -->
+          <div class="four columns u-pull-right">
+            <ul>
+              <li class="submenu">
+                <a href="compra.html"><img src="img/iconos/bolsa.png" id="img-carrito" width="55"/>
+                <div id="carrito">
+                  <table id="lista-carrito" class="u-full-width">
+                    <thead>
+                      <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                  <a href="#" id="vaciar-carrito" class="button u-full-width"
+                    >Vaciar Carrito</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="lista-cursos" class="container">
+      <h1 id="encabezado" class="encabezado">Compras</h1>
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <div class="rectangulo color1">
+              <img
+                src="img/conejo1.png"
+                alt="Imagen de Curso"
+                class="imagen-en-rectangulo"
+              />
+            </div>
+            <!-- Rectángulo con imagen dentro -->
+            <div class="info-card">
+              <h4>Conejito 1</h4>
+              <p class="precio"><span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="12"
+              >
+                Agregar Al Carrito <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+
+        <div class="four columns">
+          <div class="card">
+            <div class="rectangulo color2">
+              <img
+                src="img/conejo3.png"
+                alt="Imagen de Curso"
+                class="imagen-en-rectangulo"
+              />
+            </div>
+            <!-- Rectángulo con imagen dentro -->
+            <div class="info-card">
+              <h4>Conejito 2</h4>
+              <p class="precio"><span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="12"
+              >
+                Agregar Al Carrito <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="four columns">
+          <div class="card">
+            <div class="rectangulo color3">
+              <img
+                src="img/conejo4.png"
+                alt="Imagen de Curso"
+                class="imagen-en-rectangulo"
+              />
+            </div>
+            <!-- Rectángulo con imagen dentro -->
+            <div class="info-card">
+              <h4>Conejito 3</h4>
+              <p class="precio"><span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="12"
+              >
+                Agregar Al Carrito <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <div class="rectangulo color1">
+              <img
+                src="img/conejo4.png"
+                alt="Imagen de Curso"
+                class="imagen-en-rectangulo"
+              />
+            </div>
+            <!-- Rectángulo con imagen dentro -->
+            <div class="info-card">
+              <h4>Conejito 2</h4>
+              <p class="precio"><span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="12"
+              >
+                Agregar Al Carrito <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <div class="rectangulo color2">
+              <img
+                src="img/compraConejo1.jpeg"
+                alt="Imagen de Curso"
+                class="imagen-en-rectangulo"
+              />
+            </div>
+            <div class="info-card">
+              <h4>Conejito 2</h4>
+              <p class="precio"><span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="12"
+              >
+                Agregar Al Carrito <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <div class="rectangulo color3">
+              <img
+                src="img/compraConejo1.jpeg"
+                alt="Imagen de Curso"
+                class="imagen-en-rectangulo"
+              />
+            </div>
+            <div class="info-card">
+              <h4>Conejito 2</h4>
+              <p class="precio"><span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="12"
+              >
+                Agregar Al Carrito <i class="fas fa-shopping-cart"></i>
+              </a>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+
+      <!--.row-->
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <div class="rectangulo color1">
+              <img
+                src="img/compraConejo1.jpeg"
+                alt="Imagen de Curso"
+                class="imagen-en-rectangulo"
+              />
+            </div>
+            <div class="info-card">
+              <h4>Conejito 2</h4>
+              <p class="precio"><span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="7"
+                >Agregar Al Carrito</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <div class="rectangulo color2">
+              <img
+                src="img/compraConejo1.jpeg"
+                alt="Imagen de Curso"
+                class="imagen-en-rectangulo"
+              />
+            </div>
+            <div class="info-card">
+              <h4>Conejito 2</h4>
+              <p class="precio"><span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="8"
+                >Agregar Al Carrito</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <div class="rectangulo color3">
+              <img
+                src="img/compraConejo1.jpeg"
+                alt="Imagen de Curso"
+                class="imagen-en-rectangulo"
+              />
+            </div>
+            <div class="info-card">
+              <h4>Conejito 2</h4>
+              <p class="precio"><span class="u-pull-right">$15</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="9"
+                >Agregar Al Carrito</a
+              >
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="subscribe">
+          <h3>SUSCRÍBETE POR MAIL</h3>
+          <input type="email" placeholder="Enter e-mail" />
+          <button onclick="subscribe()">➜</button>
+        </div>
+        <div class="social-media">
+          <h3>SÍGUENOS EN REDES SOCIALES</h3>
+          <a href="#" target="_blank">INSTAGRAM ➜</a>
+          <a href="#" target="_blank">FACEBOOK ➜</a>
+          <a href="#" target="_blank">TIKTOK ➜</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

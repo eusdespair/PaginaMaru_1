@@ -1,0 +1,21 @@
+.slider {
+    width:75wv;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: ;
+    width: calc(200 px * 14);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img{
+    width: 20%;
+}

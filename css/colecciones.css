@@ -1,0 +1,240 @@
+/* Estilo general del body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  background-image: repeating-text("Collection", 200px, #d6aaff);
+  position: relative;
+}
+
+/* HEADER */
+header {
+  background-color: #E08BF1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav a {
+  margin: 0 45px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.icons img {
+  width: 45px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* MAIN - Productos */
+main {
+  position: relative;
+padding-bottom: 100px; /* da espacio al footer */
+  min-height: calc(100vh - 150px); /* permite crecer con contenido */
+}
+
+
+
+
+.producto {
+  position: absolute;
+  border-radius: 20px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.producto h3 {
+  margin: 10px 0 5px;
+}
+
+.producto p {
+  font-size: 12px;
+  color: #444;
+}
+
+.imagen-producto {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Cajas de colores */
+.morado {
+  background-color: #c1a3ff;
+  top: 50px;
+  left: 50px;
+  width: 200px;
+}
+
+.rosa {
+  background-color: #f3a6d3;
+  bottom: 50px;
+  right: 50px;
+  width: 200px;
+}
+
+.gris {
+  background-color: #e2e2e2;
+  width: 400px;
+
+}
+
+.mediano {
+  top: 100px;
+  right: 100px;
+  width: 150px;
+}
+
+.chico {
+  bottom: -50px;
+  left: 420px;
+  width: 200px;
+}
+
+.gigante {
+  bottom: -200px;
+  left: 1120px;
+  width: 200px;
+}
+
+
+/* Círculo con el signo + */
+.circulo {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.mas {
+  color: #9c27b0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* POPUP de palomita */
+.popup {
+  position: absolute;
+  background-color: #c1ffc1;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+  z-index: 99;
+}
+
+.oculto {
+  display: none;
+}
+
+/* Fondo con texto tipo patrón */
+@function repeating-text($text, $spacing, $color) {
+  $svg: '<svg xmlns="http://www.w3.org/2000/svg" width="'+$spacing+'" height="'+$spacing+'" fill="'+$color+'" font-family="Arial" font-size="32"><text x="0" y="52">'+$text+'</text></svg>';
+  @return url('data:image/svg+xml,' + $svg);
+}
+
+body {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='100'><text x='0' y='100' font-size='40' fill='%23d6aaff' font-family='Arial'>Collection</text></svg>");
+  background-repeat: repeat;
+  background-size: 300px 100px;
+  opacity: 0.95;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6e6e6;
+    padding: 40px;
+    border-radius: 12px;
+    margin-top: 60px;
+}
+
+.subscribe, .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h3 {
+    color: #c55dd6;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #c55dd6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* =========================
+   Galería de peluches
+========================= */
+.peluche-galeria {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+
+}
+
+.peluche-galeria h2 {
+  font-size: 36px;
+  color: #A45CC4;
+  margin-bottom: 10px;
+}
+
+.peluche-galeria p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #666;
+  font-size: 14px;
+}
+
+.galeria-imagenes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.galeria-imagenes img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
